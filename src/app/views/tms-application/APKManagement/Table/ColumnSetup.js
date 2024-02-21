@@ -1,0 +1,76 @@
+export const columns = [
+  {
+    accessorKey: 'id',
+    header: 'ID',
+    size: 20,
+    enableEditing: false,
+    enableFilters: false,
+    muiTableHeadCellProps: {
+      align: 'center',
+    },
+    muiTableBodyCellProps: {
+      align: 'center',
+    },
+    Cell: (row) => <span>{row.row.original.id}</span>,
+  },
+  {
+    accessorKey: 'packagename',
+    header: 'Package Name',
+    muiTableHeadCellProps: {
+      align: 'left',
+    },
+    muiTableBodyCellProps: {
+      align: 'left',
+    },
+    muiTableBodyCellEditTextFieldProps: {
+      required: true,
+    },
+  },
+  {
+    accessorKey: 'version',
+    header: 'Version',
+    muiTableHeadCellProps: {
+      align: 'left',
+    },
+    muiTableBodyCellProps: {
+      align: 'left',
+    },
+    muiTableBodyCellEditTextFieldProps: {
+      required: true,
+    },
+  },
+  {
+    accessorKey: 'apkfileUrl',
+    header: 'Url',
+    muiTableHeadCellProps: {
+      align: 'left',
+    },
+    muiTableBodyCellProps: {
+      align: 'left',
+    },
+  },
+  {
+    accessorKey: 'md5',
+    header: 'MD5',
+    hidden: true,
+    muiTableHeadCellProps: {
+      align: 'left',
+    },
+    muiTableBodyCellProps: {
+      align: 'left',
+    },
+  },
+  {
+    accessorKey: 'packagesize',
+    header: 'Size (bytes)',
+    muiTableHeadCellProps: {
+      align: 'left',
+    },
+    muiTableBodyCellProps: {
+      align: 'left',
+    },
+    muiTableBodyCellEditTextFieldProps: {
+      required: true,
+    },
+  },
+];
