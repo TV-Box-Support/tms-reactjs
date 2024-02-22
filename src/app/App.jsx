@@ -1,6 +1,6 @@
 import { Provider } from 'react-redux';
 import { useRoutes } from 'react-router-dom';
-import { MatxTheme } from './components';
+import { TmsTheme } from './components';
 import { AuthProvider } from './contexts/JWTAuthContext';
 import { SettingsProvider } from './contexts/SettingsContext';
 import { Store } from './redux/Store';
@@ -14,7 +14,7 @@ const App = () => {
   return (
     <Provider store={Store}>
       <SettingsProvider>
-        <MatxTheme>
+        <TmsTheme>
           <AuthProvider>{content}</AuthProvider>
           <ToastContainer
             position="top-right"
@@ -27,7 +27,7 @@ const App = () => {
             draggable
             pauseOnHover
           />
-        </MatxTheme>
+        </TmsTheme>
       </SettingsProvider>
     </Provider>
   );

@@ -1,5 +1,5 @@
 import { styled } from '@mui/system';
-import { MatxVerticalNav } from 'app/components';
+import { TmsVerticalNav } from 'app/components';
 import useSettings from 'app/hooks/useSettings';
 import { navigations, navigationsUser } from 'app/navigations';
 import { Fragment, useEffect, useState } from 'react';
@@ -55,7 +55,7 @@ const Sidenav = ({ children }) => {
     <Fragment>
       <StyledScrollBar options={{ suppressScrollX: true }}>
         {children}
-        <MatxVerticalNav items={navigation} />
+        <TmsVerticalNav items={navigation} />
       </StyledScrollBar>
 
       <SideNavMobile onClick={() => updateSidebarMode({ mode: 'close' })} />

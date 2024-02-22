@@ -11,7 +11,7 @@ const MenuButton = styled(Box)(({ theme }) => ({
   },
 }));
 
-const MatxMenu = (props) => {
+const TmsMenu = (props) => {
   const [anchorEl, setAnchorEl] = React.useState(null);
   const children = React.Children.toArray(props.children);
   let { shouldCloseOnItemClick = true, horizontalPosition = 'left' } = props;
@@ -55,4 +55,4 @@ const MatxMenu = (props) => {
   );
 };
 
-export default MatxMenu;
+export default TmsMenu;

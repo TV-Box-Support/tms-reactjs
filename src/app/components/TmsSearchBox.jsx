@@ -82,7 +82,7 @@ const SearchContainer = styled('div')(({ theme }) => ({
   },
 }));
 
-const MatxSearchBox = () => {
+const TmsSearchBox = () => {
   const [open, setOpen] = useState(false);
   const toggle = () => {
     setOpen(!open);
@@ -121,4 +121,4 @@ const MatxSearchBox = () => {
   );
 };
 
-export default MatxSearchBox;
+export default TmsSearchBox;

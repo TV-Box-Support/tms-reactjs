@@ -1,6 +1,6 @@
 import { Icon, IconButton } from '@mui/material';
 import { styled, useTheme } from '@mui/system';
-import MatxCustomizer from '../MatxCustomizer/MatxCustomizer';
+import TmsCustomizer from '../TmsCustomizer/TmsCustomizer';
 import { Span } from '../Typography';
 
 const SidebarRoot = styled('div')(({ theme, width }) => ({
@@ -23,7 +23,7 @@ const SidebarRoot = styled('div')(({ theme, width }) => ({
       '.content-wrap, .layout2.layout-contained, .layout2.layout-full': {
         marginRight: (props) => props.width,
       },
-      '.matx-customizer': {
+      '.tms-customizer': {
         right: (props) => props.width,
       },
     },
@@ -41,7 +41,7 @@ const SecondarySidebarContent = () => {
   return (
     <SidebarRoot width={'50px'} className="secondary-sidebar">
       <Span sx={{ m: 'auto' }}></Span>
-      <MatxCustomizer />
+      <TmsCustomizer />
       <Span sx={{ m: 'auto' }}></Span>
     </SidebarRoot>
   );

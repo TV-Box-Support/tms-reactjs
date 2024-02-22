@@ -74,7 +74,7 @@ const BadgeValue = styled('div')(() => ({
   borderRadius: '300px',
 }));
 
-const MatxVerticalNavExpansionPanel = ({ item, children, mode }) => {
+const TmsVerticalNavExpansionPanel = ({ item, children, mode }) => {
   const [collapsed, setCollapsed] = useState(true);
   const elementRef = useRef(null);
   const componentHeight = useRef(0);
@@ -154,4 +154,4 @@ const MatxVerticalNavExpansionPanel = ({ item, children, mode }) => {
   );
 };
 
-export default MatxVerticalNavExpansionPanel;
+export default TmsVerticalNavExpansionPanel;

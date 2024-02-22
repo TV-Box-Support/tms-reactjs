@@ -7,7 +7,7 @@ const CustomLinearProgress = styled(LinearProgress)(() => ({
   background: 'rgba(0, 0, 0, 0.1)',
 }));
 
-const MatxProgressBar = ({
+const TmsProgressBar = ({
   value = 75,
   color = 'primary',
   text = '',
@@ -37,4 +37,4 @@ const MatxProgressBar = ({
   );
 };
 
-export default MatxProgressBar;
+export default TmsProgressBar;

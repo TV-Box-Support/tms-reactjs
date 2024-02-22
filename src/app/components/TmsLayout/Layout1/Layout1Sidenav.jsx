@@ -1,6 +1,6 @@
 import { Hidden, Switch } from '@mui/material';
 import { Box, styled, useTheme } from '@mui/system';
-import { themeShadows } from 'app/components/MatxTheme/themeColors';
+import { themeShadows } from 'app/components/TmsTheme/themeColors';
 import useSettings from 'app/hooks/useSettings';
 import { sidenavCompactWidth, sideNavWidth } from 'app/utils/constant';
 import { convertHexToRGB } from 'app/utils/utils';

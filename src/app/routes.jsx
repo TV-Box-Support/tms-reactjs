@@ -8,14 +8,14 @@ import ApplicationManageRoutes from './views/tms-application/ApplicationManagerR
 import NotFound from 'app/views/tms-auth/NotFound';
 import systemRoutes from 'app/views/tms-auth/SystemRoutes.js';
 import { Navigate } from 'react-router-dom';
-import MatxLayout from './components/MatxLayout/MatxLayout';
+import TmsLayout from './components/TmsLayout/TmsLayout';
 import PolicyManageRoutes from './views/tms-policy/PolicyManageRoute';
 
 const routes = [
   {
     element: (
       <AuthGuard>
-        <MatxLayout />
+        <TmsLayout />
       </AuthGuard>
     ),
     children: [

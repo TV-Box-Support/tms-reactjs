@@ -1,6 +1,6 @@
-<h1><a href="https://ui-lib.com/downloads/matx-react-dashboard/">Matx React Material Design Admin Dashboard Template</a></h1>
+<h1><a href="https://ui-lib.com/downloads/tms-react-dashboard/">Tms React Material Design Admin Dashboard Template</a></h1>
 
-<a href="https://matx-react-free.netlify.app/"><img alt="Matx React Admin" src="https://ui-lib.com/blog/wp-content/uploads/2021/09/matx-github.png" /></a>
+<a href="https://tms-react-free.netlify.app/"><img alt="Tms React Admin" src="https://ui-lib.com/blog/wp-content/uploads/2021/09/tms-github.png" /></a>
 
 <p>MatX is a full-featured React Material UI Admin Dashboard template. MatX is built with React, Redux & Material UI We implemented all the features you might need to start a new Web application. The free version includes all Material UI components, Form elements, and validation, JWT authentication, Sign in, sign up pages,  Vertical navigation, Lazy loading, Code splitting.</p>
 
@@ -12,12 +12,12 @@
 </tr>
 <tr>
 <td>
-<a href="https://matx-react-free.netlify.app/">Live Preview</a> <br>
-<a href="https://ui-lib.com/downloads/matx-react-dashboard/">Download MatX</a>
+<a href="https://tms-react-free.netlify.app/">Live Preview</a> <br>
+<a href="https://ui-lib.com/downloads/tms-react-dashboard/">Download MatX</a>
 </td>
 <td>
-<a href="http://matx-react.ui-lib.com/">Live Preview</a> <br>
-<a href="https://ui-lib.com/downloads/matx-pro-react-admin/">Get MatX Pro</a>
+<a href="http://tms-react.ui-lib.com/">Live Preview</a> <br>
+<a href="https://ui-lib.com/downloads/tms-pro-react-admin/">Get MatX Pro</a>
 </td>
 </tr>
 <tr>
@@ -75,7 +75,7 @@
 </td>
 <td valign="top">
 <ul>
-  <li>All features of Matx free +</li>
+  <li>All features of Tms free +</li>
   <li>Firebase authentication</li>
   <li>Auth0 authentication</li>
   <li>Horizontal navigation</li>
@@ -171,6 +171,6 @@ It correctly bundles React in production mode and optimizes the build for the be
 Your app is ready to be deployed!</p>
 
 <h3>Download</h3>
-Download From <a href="https://ui-lib.com/downloads/matx-react-dashboard/">official website</a>
+Download From <a href="https://ui-lib.com/downloads/tms-react-dashboard/">official website</a>
 
 <h3>For questions and support mail us at <a href="mailto:support@ui-lib.com">support@ui-lib.com</a></h3>

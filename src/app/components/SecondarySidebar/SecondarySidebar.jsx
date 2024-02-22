@@ -1,5 +1,5 @@
 import useSettings from 'app/hooks/useSettings';
-import SecondarySidenavTheme from '../MatxTheme/SecondarySidenavTheme/SecondarySidenavTheme';
+import SecondarySidenavTheme from '../TmsTheme/SecondarySidenavTheme/SecondarySidenavTheme';
 import SecondarySidebarContent from './SecondarySidebarContent';
 import SecondarySidebarToggle from './SecondarySidebarToggle';
 

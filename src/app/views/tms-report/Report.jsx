@@ -2,7 +2,7 @@ import { Box, Button, Grid } from '@mui/material';
 import Breadcrumb from 'app/components/Breadcrumb';
 import SimpleCard from 'app/components/Card/SimpleCard';
 import { Container } from 'app/components/TagPage/CustomTag';
-import { SearchBox } from 'app/components/MatxSearchBox';
+import { SearchBox } from 'app/components/TmsSearchBox';
 import { useRef, useState } from 'react';
 import BasicDatePicker from 'app/components/BasicDatePicker';
 import { useEffect } from 'react';

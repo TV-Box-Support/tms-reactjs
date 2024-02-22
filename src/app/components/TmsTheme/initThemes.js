@@ -3,7 +3,7 @@ import { forEach, merge } from 'lodash';
 import { themeColors } from './themeColors';
 import themeOptions from './themeOptions';
 
-function createMatxThemes() {
+function createTmsThemes() {
   let themes = {};
 
   forEach(themeColors, (value, key) => {
@@ -12,4 +12,4 @@ function createMatxThemes() {
 
   return themes;
 }
-export const themes = createMatxThemes();
+export const themes = createTmsThemes();

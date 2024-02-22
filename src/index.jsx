@@ -17,7 +17,7 @@ ReactDOM.render(
 );
 
 // for IE-11 support un-comment cssVars() and it's import in this file
-// and in MatxTheme file
+// and in TmsTheme file
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

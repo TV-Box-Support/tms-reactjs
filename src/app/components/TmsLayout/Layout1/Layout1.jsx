@@ -1,13 +1,13 @@
 import { ThemeProvider, useMediaQuery } from '@mui/material';
 import { Box, styled, useTheme } from '@mui/system';
-import { MatxSuspense } from 'app/components';
+import { TmsSuspense } from 'app/components';
 import useSettings from 'app/hooks/useSettings';
 import { sidenavCompactWidth, sideNavWidth } from 'app/utils/constant';
 import React, { useEffect, useRef } from 'react';
 import Scrollbar from 'react-perfect-scrollbar';
 import { Outlet } from 'react-router-dom';
 import Footer from '../../Footer';
-import SidenavTheme from '../../MatxTheme/SidenavTheme/SidenavTheme';
+import SidenavTheme from '../../TmsTheme/SidenavTheme/SidenavTheme';
 import Layout1Sidenav from './Layout1Sidenav';
 import Layout1Topbar from './Layout1Topbar';
 
@@ -106,9 +106,9 @@ const Layout1 = () => {
               </ThemeProvider>
             )}
             <Box flexGrow={1} position="relative">
-              <MatxSuspense>
+              <TmsSuspense>
                 <Outlet />
-              </MatxSuspense>
+              </TmsSuspense>
             </Box>
 
             {settings.footer.show && !settings.footer.fixed && <Footer />}
@@ -124,9 +124,9 @@ const Layout1 = () => {
             )}
 
             <Box flexGrow={1} position="relative">
-              <MatxSuspense>
+              <TmsSuspense>
                 <Outlet />
-              </MatxSuspense>
+              </TmsSuspense>
             </Box>
 
             {settings.footer.show && !settings.footer.fixed && <Footer />}

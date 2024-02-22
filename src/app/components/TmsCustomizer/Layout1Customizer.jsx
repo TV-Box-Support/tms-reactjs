@@ -15,7 +15,7 @@ import {
 } from '@mui/material';
 import { get } from 'lodash';
 import { Fragment } from 'react';
-import { themeColors, themeShadows } from '../MatxTheme/themeColors';
+import { themeColors, themeShadows } from '../TmsTheme/themeColors';
 import BadgeSelected from './BadgeSelected';
 import { mainSidebarThemes, topbarThemes } from './customizerOptions';
 

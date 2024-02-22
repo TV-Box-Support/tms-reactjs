@@ -3,7 +3,7 @@ import useSettings from 'app/hooks/useSettings';
 import React, { Fragment } from 'react';
 import { NavLink } from 'react-router-dom';
 import { Paragraph, Span } from '../Typography';
-import MatxVerticalNavExpansionPanel from './MatxVerticalNavExpansionPanel';
+import TmsVerticalNavExpansionPanel from './TmsVerticalNavExpansionPanel';
 
 const ListLabel = styled(Paragraph)(({ theme, mode }) => ({
   fontSize: '12px',
@@ -73,7 +73,7 @@ const BadgeValue = styled('div')(() => ({
   borderRadius: '300px',
 }));
 
-const MatxVerticalNav = ({ items }) => {
+const TmsVerticalNav = ({ items }) => {
   const { settings } = useSettings();
   const { mode } = settings.layout1Settings.leftSidebar;
 
@@ -88,9 +88,9 @@ const MatxVerticalNav = ({ items }) => {
 
       if (item.children) {
         return (
-          <MatxVerticalNavExpansionPanel mode={mode} item={item} key={index}>
+          <TmsVerticalNavExpansionPanel mode={mode} item={item} key={index}>
             {renderLevels(item.children)}
-          </MatxVerticalNavExpansionPanel>
+          </TmsVerticalNavExpansionPanel>
         );
       } else if (item.type === 'extLink') {
         return (
@@ -171,4 +171,4 @@ const MatxVerticalNav = ({ items }) => {
   return <div className="navigation">{renderLevels(items)}</div>;
 };
 
-export default React.memo(MatxVerticalNav);
+export default React.memo(TmsVerticalNav);

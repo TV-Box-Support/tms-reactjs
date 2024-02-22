@@ -6,8 +6,8 @@ const Container = styled('div')(() => ({
   position: 'relative',
 }));
 
-const MatxSidenavContainer = ({ children }) => {
+const TmsSidenavContainer = ({ children }) => {
   return <Container>{children}</Container>;
 };
 
-export default MatxSidenavContainer;
+export default TmsSidenavContainer;

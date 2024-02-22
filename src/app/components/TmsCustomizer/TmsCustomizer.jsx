@@ -1,112 +1,38 @@
 import {
-  // Avatar,
-  Hidden,
-  Icon,
-  IconButton,
-  MenuItem,
-  useMediaQuery,
+  Box,
   Button,
   Card,
   Drawer,
+  Icon,
+  IconButton,
+  styled,
   ThemeProvider,
-  Avatar,
-  // Tooltip,
+  Tooltip,
+  useTheme,
 } from '@mui/material';
-import { Box, styled, useTheme } from '@mui/system';
-import { MatxMenu } from 'app/components';
-import { themeShadows } from 'app/components/MatxTheme/themeColors';
-import { NotificationProvider } from 'app/contexts/NotificationContext';
-import useAuth from 'app/hooks/useAuth';
 import useSettings from 'app/hooks/useSettings';
-import { topBarHeight } from 'app/utils/constant';
-import React from 'react';
-import { Link, NavLink } from 'react-router-dom';
-import { H5, Span } from '../../../components/Typography';
-import NotificationBar from '../../NotificationBar/NotificationBar';
-
-import {
-  // Fragment,
-  useState,
-} from 'react';
+import { Fragment, useState } from 'react';
 import Scrollbar from 'react-perfect-scrollbar';
-import BadgeSelected from 'app/components/MatxCustomizer/BadgeSelected';
-import ConfirmLogout from './ConfirmLogOut';
-import MatxSearchBox from 'app/components/MatxSearchBox';
+import { themeShadows } from '../TmsTheme/themeColors';
+import { H5, Span } from '../Typography';
+import BadgeSelected from './BadgeSelected';
 
-const StyledIconButton = styled(IconButton)(({ theme }) => ({
-  color: theme.palette.text.primary,
-}));
-
-const TopbarRoot = styled('div')(({ theme }) => ({
-  top: 0,
-  zIndex: 96,
-  transition: 'all 0.3s ease',
-  boxShadow: themeShadows[8],
-  height: topBarHeight,
-}));
-
-const TopbarContainer = styled(Box)(({ theme }) => ({
-  padding: '8px',
-  paddingLeft: 18,
-  paddingRight: 20,
-  height: '100%',
-  display: 'flex',
-  alignItems: 'center',
-  justifyContent: 'space-between',
-  background: theme.palette.primary.main,
-  [theme.breakpoints.down('sm')]: {
-    paddingLeft: 16,
-    paddingRight: 16,
-  },
-  [theme.breakpoints.down('xs')]: {
-    paddingLeft: 14,
-    paddingRight: 16,
-  },
-}));
-
-const UserMenu = styled(Box)(() => ({
-  display: 'flex',
-  alignItems: 'center',
+const Label = styled(Span)(({ theme }) => ({
+  fontWeight: 700,
+  fontSize: '1rem',
   cursor: 'pointer',
-  borderRadius: 24,
-  padding: 4,
-  '& span': { margin: '0 8px' },
-}));
-
-const StyledItem = styled(MenuItem)(({ theme }) => ({
-  display: 'flex',
-  alignItems: 'center',
-  minWidth: 185,
-  '& a': {
-    width: '100%',
-    display: 'flex',
-    alignItems: 'center',
-    textDecoration: 'none',
+  borderRadius: '4px',
+  marginBottom: '2.5rem',
+  letterSpacing: '1.5px',
+  padding: '.25rem .5rem',
+  transform: 'rotate(90deg)',
+  color: theme.palette.secondary.main,
+  backgroundColor: theme.palette.primary.dark,
+  '&:hover, &.open': {
+    backgroundColor: theme.palette.secondary.main,
+    color: theme.palette.secondary.contrastText,
   },
-  '& span': { marginRight: '10px', color: theme.palette.text.primary },
 }));
-
-// const IconBox = styled('div')(({ theme }) => ({
-//   display: 'inherit',
-//   [theme.breakpoints.down('md')]: { display: 'none !important' },
-// }));
-
-// const Label = styled(Span)(({ theme }) => ({
-//   fontWeight: 700,
-//   fontSize: '1rem',
-//   cursor: 'pointer',
-//   borderRadius: '4px',
-//   marginBottom: '2.5rem',
-//   letterSpacing: '1.5px',
-//   padding: '.25rem .5rem',
-//   transform: 'rotate(90deg)',
-//   color: theme.palette.secondary.main,
-//   backgroundColor: theme.palette.primary.dark,
-//   '&:hover, &.open': {
-//     backgroundColor: theme.palette.secondary.main,
-//     color: theme.palette.secondary.contrastText,
-//   },
-// }));
 
 const MaxCustomaizer = styled('div')(({ theme }) => ({
   top: 0,
@@ -159,112 +85,27 @@ const StyledScrollBar = styled(Scrollbar)(() => ({
   paddingRight: '16px',
 }));
 
-const Layout1Topbar = () => {
+const TmsCustomizer = () => {
   const theme = useTheme();
   const [open, setOpen] = useState(false);
-  const [openLogout, setOpenLogout] = useState(false);
   const [tabIndex, setTabIndex] = useState(0);
   const { settings, updateSettings } = useSettings();
   const secondary = theme.palette.text.secondary;
 
   const tooglePanel = () => setOpen(!open);
 
-  const handleClickLogout = () => {
-    setOpenLogout(true);
-  };
-
-  const handleAgreeLogout = () => {
-    logout();
-  };
-
-  const handleClose = () => {
-    setOpenLogout(false);
-  };
-
   const handleTabChange = (index) => setTabIndex(index);
 
   let activeTheme = { ...settings.themes[settings.activeTheme] };
 
-  const { logout, user } = useAuth();
-  const isMdScreen = useMediaQuery(theme.breakpoints.down('md'));
-
-  const updateSidebarMode = (sidebarSettings) => {
-    updateSettings({
-      layout1Settings: { leftSidebar: { ...sidebarSettings } },
-    });
-  };
-
-  const handleSidebarToggle = () => {
-    let { layout1Settings } = settings;
-    let mode;
-    if (isMdScreen) {
-      mode = layout1Settings.leftSidebar.mode === 'close' ? 'mobile' : 'close';
-    } else {
-      mode = layout1Settings.leftSidebar.mode === 'full' ? 'close' : 'full';
-    }
-    updateSidebarMode({ mode });
-  };
-
   return (
-    <TopbarRoot>
-      <TopbarContainer>
-        <Box display="flex">
-          <StyledIconButton onClick={handleSidebarToggle}>
-            <Icon>menu</Icon>
-          </StyledIconButton>
-        </Box>
+    <Fragment>
+      <Tooltip title="Theme Settings" placement="left">
+        <Label className="open" onClick={tooglePanel}>
+          DEMOS
+        </Label>
+      </Tooltip>
 
-        <Box display="flex" alignItems="center">
-          <MatxSearchBox />
-          <NotificationProvider>
-            <NotificationBar />
-          </NotificationProvider>
-          <ConfirmLogout
-            openLogout={openLogout}
-            handleAgreeLogout={handleAgreeLogout}
-            handleClose={handleClose}
-          />
-          <MatxMenu
-            menuButton={
-              <UserMenu>
-                <Hidden xsDown>
-                  <Span>
-                    Hi <strong>{user.username}</strong>
-                  </Span>
-                </Hidden>
-                <Avatar
-                  src={user.avatar ? user.avatar : `/public/assets/images/avatars/001-man.svg`}
-                  sx={{ cursor: 'pointer' }}
-                />
-              </UserMenu>
-            }
-          >
-            <StyledItem>
-              <Link to="/">
-                <Icon> home </Icon>
-                <Span> Home </Span>
-              </Link>
-            </StyledItem>
-
-            <StyledItem>
-              <NavLink to={`/tms/account-management?id=${user.id}`}>
-                <Icon> person </Icon>
-                <Span> Profile </Span>
-              </NavLink>
-            </StyledItem>
-
-            <StyledItem onClick={tooglePanel}>
-              <Icon> settings </Icon>
-              <Span> Setting Themes </Span>
-            </StyledItem>
-
-            <StyledItem onClick={handleClickLogout}>
-              <Icon> power_settings_new </Icon>
-              <Span> Logout </Span>
-            </StyledItem>
-          </MatxMenu>
-        </Box>
-      </TopbarContainer>
       <ThemeProvider theme={activeTheme}>
         <Drawer
           open={open}
@@ -309,6 +150,7 @@ const Layout1Topbar = () => {
               {tabIndex === 0 && (
                 <Box sx={{ mb: 4, mx: 3 }}>
                   <Box sx={{ color: secondary }}>Layouts</Box>
+
                   <Box display="flex" flexDirection="column">
                     {demoLayouts.map((layout) => (
                       <LayoutBox
@@ -339,7 +181,7 @@ const Layout1Topbar = () => {
           </MaxCustomaizer>
         </Drawer>
       </ThemeProvider>
-    </TopbarRoot>
+    </Fragment>
   );
 };
 
@@ -386,4 +228,4 @@ const demoLayouts = [
   },
 ];
 
-export default React.memo(Layout1Topbar);
+export default TmsCustomizer;
