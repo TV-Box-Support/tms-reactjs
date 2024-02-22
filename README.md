@@ -60,9 +60,8 @@ The TMS includes the following features:
 | :-----------------------------------------------------------------: |
 | ![screen_device_detail](media/screenshots/screen_device_detail.png) |
 
-|                          _Screen ListDevice Manager_                          |
-| :---------------------------------------------------------------------------: |
-| ![screen_listDevice_manager](media/screenshots/screen_listDevice_manager.png) |
+<details>
+  <summary> Show more </summary>
 
 |                          _Screen Application Manager_                           |
 | :-----------------------------------------------------------------------------: |
@@ -91,6 +90,8 @@ The TMS includes the following features:
 |                        _Screen Profile Manager_                         |
 | :---------------------------------------------------------------------: |
 | ![screen_profile_manager](media/screenshots/screen_profile_manager.png) |
+
+</details>
 
 ## Getting started
 
