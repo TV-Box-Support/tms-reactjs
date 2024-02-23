@@ -28,7 +28,7 @@ A large-scale system without a technical management system would require a signi
   </div>
 </div>
 
-<p align="center"><strong>Figure 1.1: System Model</strong></p>
+<p align="center"><strong>System Model</strong></p>
 
 Using the TMS management system will address the aforementioned requirements automatically, quickly, and accurately. While there are existing TMS systems in the market, they have not been widely adopted for SMB products or specific industries. Due to the aforementioned challenges and my interest in SMB technology, I have chosen this topic for my graduation project, with the aim of building an efficient and user-friendly system.
 
