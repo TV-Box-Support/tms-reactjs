@@ -24,7 +24,7 @@ A large-scale system without a technical management system would require a signi
 
 <div style="display: flex; justify-content: center;">
   <div style="border-radius: 20px; overflow: hidden; padding-bottom: 10px;">
-    <img src="media/img/System Model.png" style="max-height: 300px;">
+    <img src="media/img/System_Model.png" style="max-height: 300px;">
   </div>
 </div>
 
