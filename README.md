@@ -2,7 +2,7 @@
 
 ##### The set-top box terminal management system is the University Graduation Project of student Chung Nguyen Thanh - School of Electrical and Electronics Engineering of Hanoi University of Science and Technology.
 
-##### This source is the web client interface for Smart Box device managers of the TMS. For security reasons, I cannot publish the application source code and Back-end source code of this system.
+##### This source is the web client interface for Smart Box device managers of the TMS. For security reasons, I cannot publish the application source code of this system. The following link is the Back-end source code of the project: https://github.com/ChunhThanhDe/tms-springboot
 
 ###### contact for work, mail: chunhthanhde.dev@gmail.com
 
