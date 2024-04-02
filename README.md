@@ -110,6 +110,9 @@ Runs the app in development mode.
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits, and you will also see any lint errors in the console.
 
+## Send a 💝 Thanks to
+First of all, I would like to thank the HEC Electronic Technology Center of 🏢 VNPT Technology Company for creating conditions for me to build and develop this topic on the company's SmartBox 3 device. I would also like to thank 💝 Nguyen Vinh Khang for helping me develop the Web client source code for the system and 💝 Le Thu An for working with me to build a Business Analyst for the project. ❤️
+
 ## Download
 
 #### This Front-end web is developed from Matx - Free and open-source React Material UI Admin Dashboard Template
