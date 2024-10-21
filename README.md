@@ -12,9 +12,9 @@ Show some ❤️ and star ⭐ the repo if you liked it.
   <img src="media/logo/aosp-atv.png" height="120px" />
 </p>
 
-![GitHub stars](https://img.shields.io/github/stars/chunhthanhde/tms-reactjs?style=social)
-![GitHub forks](https://img.shields.io/github/forks/chunhthanhde/tms-reactjs?style=social)
-![GitHub watchers](https://img.shields.io/github/watchers/chunhthanhde/tms-reactjs?style=social)
+![GitHub stars](https://img.shields.io/github/stars/TV-Box-Support/tms-reactjs?style=social)
+![GitHub forks](https://img.shields.io/github/forks/TV-Box-Support/tms-reactjs?style=social)
+![GitHub watchers](https://img.shields.io/github/watchers/TV-Box-Support/tms-reactjs?style=social)
 
 <a href="https://www.linkedin.com/in/chunhthanhde/">
   <img src="https://img.shields.io/badge/Support-Recommend%2FEndorse%20me%20on%20Linkedin-blue?style=for-the-badge&logo=linkedin" alt="Support me on LinkedIn" />
@@ -24,7 +24,7 @@ Show some ❤️ and star ⭐ the repo if you liked it.
 
 <a href="https://www.buymeacoffee.com/chunhthanhde" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/yellow_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" ></a>
 
-🚑 This source is the web client interface for Smart Box device managers of the TMS. For security reasons, I cannot 🙌 publish the application source code of this system. The following link is the Back-end source code of the project: https://github.com/ChunhThanhDe/tms-springboot
+🚑 **Note**: This repo contains the web client interface for managing TMS devices. For security reasons, the application source code of this system is not published. You can find the backend source code here: [tms-springboot](https://github.com/ChunhThanhDe/tms-springboot).
 
 ## 📚 Induction
 
@@ -127,8 +127,18 @@ The page will reload if you make edits, and you will also see any lint errors in
 ## Send a 💝 Thanks to
 First of all, I would like to thank the HEC Electronic Technology Center of 🏢 VNPT Technology Company for creating conditions for me to build and develop this topic on the company's SmartBox 3 device. I would also like to thank 💝 Nguyen Vinh Khang for helping me develop the Web client source code for the system and 💝 Le Thu An for working with me to build a Business Analyst for the project. ❤️
 
-## 🔷 Download
+## 🌟 Star History
 
-#### This Front-end web is developed from Matx - Free and open-source React Material UI Admin Dashboard Template
+<a href="https://star-history.com/#TV-Box-Support/Spotify-With-Flutter&Date">
+ <picture>
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=TV-Box-Support/tms-reactjs&type=Date&theme=dark" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=TV-Box-Support/tms-reactjs&type=Date" />
+   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=TV-Box-Support/tms-reactjs&type=Date" />
+ </picture>
+</a>
 
-#### [Live Preview](https://matx-react-free.netlify.app/) - [GitHub MatX](https://github.com/uilibrary/matx-react)
+## 🔷 Download Template
+
+This front-end web application is built using the **Matx** React Material UI Admin Dashboard template.
+
+#### [Live Preview](https://matx-react-free.netlify.app/) - [GitHub Matx](https://github.com/uilibrary/matx-react)
