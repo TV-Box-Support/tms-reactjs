@@ -129,7 +129,7 @@ First of all, I would like to thank the HEC Electronic Technology Center of 🏢
 
 ## 🌟 Star History
 
-<a href="https://star-history.com/#TV-Box-Support/Spotify-With-Flutter&Date">
+<a href="https://star-history.com/#TV-Box-Support/tms-reactj&Date">
  <picture>
    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=TV-Box-Support/tms-reactjs&type=Date&theme=dark" />
    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=TV-Box-Support/tms-reactjs&type=Date" />
